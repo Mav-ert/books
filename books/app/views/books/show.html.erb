@@ -1,0 +1,16 @@
+<%= button_to "Home", books_path, method: :get %>
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
+<h1><%= @book.title %></h1>
+<ul>
+    <p>Author: <%= @book.author %></p>
+    <p>Genre: <%= @book.genre %></p>
+    <p>Price: <%= @book.price %>(USD)</p>
+    <p>Published Date: <%= @book.published_date %></p>
+ 
+</ul>
+<%=button_to "Edit", edit_book_path(@book),method: :get %>
+<%=button_to "Destroy", book_path(@book),method: :delete,data: { confirm: "Are you sure?" }%>

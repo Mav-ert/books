@@ -1,0 +1,21 @@
+
+new
+.  should render the text failure
+
+viewing the index
+.  should render the page body
+
+Book
+  Validations
+.    is valid with valid attributes
+.    is not valid without title
+.    is not valid without author
+
+
+Finished in 0.19467 seconds (files took 2.09 seconds to load)
+5 examples, 0 failures
+
+Finished in 0.19467 seconds (files took 2.09 seconds to load)
+5 examples, 0 failures
+
+
